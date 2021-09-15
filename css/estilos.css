@@ -1,0 +1,45 @@
+/* Por defecto las etiquetas no se pueden solapar, 
+si se chocan se colocan una al lado de la otra.
+Al colocar position absolute, las etiquetas pueden solaparse
+y se les puede colocar una ubicación respecto a las margenes 
+de la página */
+
+#img1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#img2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#img3 {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+}
+
+#img4 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#img3 {
+    animation: flotar 4s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
