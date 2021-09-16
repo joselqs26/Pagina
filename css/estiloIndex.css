@@ -29,3 +29,78 @@ header ul li a {
 header ul li a:hover {
     background-color: cadetblue;
 }
+
+footer {
+    padding: 20px;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+.fa-bars {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+
+    width: 35px;
+    height: 35px;
+}
+
+
+input[type="checkbox"] {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+#menu_2 {
+    position: absolute;
+    width: 120px;
+    right: 0;
+    display: none;
+}
+
+#contenedor {
+    width: 35%;
+}
+
+#img2 {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .fa-bars {
+        opacity: 1;
+    }
+    
+    #img1 {
+        display: none;
+    }
+    
+    #img2 {
+        display: block;
+    }
+
+    #contenedor {
+        width: 100%;
+    }
+    
+    #menu_1 ul li a {
+        opacity: 0;
+    }
+    
+    input:checked ~#menu_2 {
+        display: block;
+    }
+    
+}
